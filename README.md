@@ -39,11 +39,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   VANMOOF.nl - https://www.vanmoof.com/en-NL
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  Home pagina <br>
+  <b>Home pagina</b> <br>
   <img src="images/screencapture-vanmoof-nl-NL-2022-09-05-17_30_45.png" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  Model S5 pagina <br>
+  <b>Model S5 pagina</b> <br>
   <img src="images/mobile (98).png" width="375px" alt="omschrijving van de pagina">
  
 </details>
