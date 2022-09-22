@@ -31,9 +31,56 @@ button, summary {
 /****************/
 
 /* jouw code */
+* {
+	margin: 0px;
+	padding: 0px;
+}
 
 body {
   color:var(--color-text);
   background-color:var(--color-background);
 }
 
+ul {
+    list-style-type: none;
+}
+
+/* Hero image */
+/* Color en gap nog aanpassen */
+/* Hoe krijg ik knoppen naast elkaar? Met grid!? */
+section:nth-of-type(1) {
+	height: 80vh;
+	background-image: url(../images/M_TestRides.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+    flex-direction: column;
+    justify-content: end;
+	padding: 1.5625em;
+	color: #eee;
+	gap: 1em;
+}
+
+ul > li {
+	background-image: url(../images/M_S5_0.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 35em;
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+	margin:1.25em;
+	text-align: center;
+	padding: 4em 1.25em;
+}
+
+/* Hoe spreek ik de 2de rij li'tjes aan? */
+section > article {
+	height: 35em;
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+	margin:1.25em;
+	text-align: center;
+	padding: 4em 1.25em;
+}
