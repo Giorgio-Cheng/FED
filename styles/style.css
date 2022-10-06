@@ -19,7 +19,9 @@ button, summary {
 :root {
 	/* startje */
 	--color-text:#111;
-	--color-background:#eee;
+	--color-background:#fff;
+	--color-card:#edf2f5;
+	--color-card-black:#1a1c20;
 }
 
 
@@ -39,16 +41,38 @@ button, summary {
 body {
   color:var(--color-text);
   background-color:var(--color-background);
+  max-width: 1280px;
+  margin: auto;
 }
 
 ul {
     list-style-type: none;
 }
 
+/* Header */
+header {
+	display: grid;
+	padding: 1.2em;
+	grid-template-columns: 1fr 1fr 1fr;
+	z-index: 9999;
+    position: fixed;
+    background: white;
+	width: 100%;
+}
+
+header button {
+	max-width: fit-content;
+}
+
+header img {
+	width: 100%;
+	height: 80%;
+}
+
 /* Hero image */
 /* Color en gap nog aanpassen */
 /* Hoe krijg ik knoppen naast elkaar? Met grid!? */
-section:nth-of-type(1) {
+main section:nth-of-type(1),  section:nth-of-type(3){
 	height: 80vh;
 	background-image: url(../images/M_TestRides.png);
 	background-repeat: no-repeat;
@@ -61,7 +85,24 @@ section:nth-of-type(1) {
 	gap: 1em;
 }
 
-ul > li {
+/*  Video is nog onder onderhoud
+video {
+	object-fit: cover;
+  	height: 80vh;
+ 	width: 100%;
+
+  	position: absolute;
+ 	top: 0;
+	left: 0;
+}
+*/
+
+
+section:nth-of-type(2) {
+	padding: 1.25em;
+}
+
+main ul li {
 	background-image: url(../images/M_S5_0.jpeg);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -74,13 +115,94 @@ ul > li {
 	padding: 4em 1.25em;
 }
 
-/* Hoe spreek ik de 2de rij li'tjes aan? */
-section > article {
-	height: 35em;
+section article {
 	display: flex;
 	flex-direction: column;
 	gap: 1em;
-	margin:1.25em;
 	text-align: center;
-	padding: 4em 1.25em;
+	padding: 3em 1.25em 2.5em;
+	text-align: left;
+	background-color:var(--color-card);
+}
+
+article:nth-of-type(3) {
+	background-color:var(--color-card-black);
+	color:white;
+}
+
+section img {
+	max-width: 100%;
+}
+
+/* Footer */
+footer {
+	background-color: #1a1c1f;
+	color: white;
+}
+
+footer ul {
+	margin-bottom: 2rem;
+}
+
+footer ul:nth-of-type(1) li {
+	padding: 1.5rem 1.25rem;
+    background-color: #2d3033;
+}
+
+footer section {
+	padding: 1.5rem 1.25rem;
+	/* display: grid */
+}
+
+footer ul:nth-of-type(2) {
+	padding: 1.5rem 1.25rem;
+
+}
+
+footer ul:nth-of-type(2) li {
+	display: flex;
+	justify-content: space-between;
+}
+
+footer ul:nth-of-type(3) {
+	padding: 1.5rem 1.25rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+footer ul:nth-of-type(4) {
+	padding: 1.5rem 1.25rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+footer ul:nth-of-type(5) {
+	padding: 1.5rem 1.25rem;
+}
+
+/* Responsive */
+@media (min-width: 678px)  {
+	ul {
+		display: flex;
+	}
+
+	ul:nth-of-type(1) li {
+		flex: 50%;
+	}
+	ul:nth-of-type(2) li {
+		flex: 33%;
+	}
+
+	section:nth-of-type(2) {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	section article {
+		flex: 50%;
+	}
+
+	section img {
+		width: 50%;
+	}
 }
