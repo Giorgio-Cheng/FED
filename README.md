@@ -62,17 +62,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   
   - Punt 2: Wanneer je op de pagina komt, hoor je een de slogan, echter eindigt ie abrupt in het midden:
   
-  <img src="readme-images/screenread_1.png" width="375px" alt="breakdownschets">
+  <img src="images/screenread_1.jpeg" width="375px" alt="breakdownschets">
 
   - Punt 3: Wanneer je de bij "taal" bent, geeft de stem aan: "NL/NL" ipv, context wat je met deze button kan doen.
   
-  <img src="readme-images/screenread_2.png" width="375px" alt="breakdownschets">
+  <img src="images/screenread_2.jpeg" width="375px" alt="breakdownschets">
 
   - Punt 4: Idem dito voor "Myvanmoof", geen context weergeven wat je met deze button kan doen.
   
   - Punt 5: Als je naar de artikelen gaat, geeft de screenreader niet aan om welk product het gaat:
   
-  <img src="readme-images/screenread_3.png" width="375px" alt="breakdownschets">
+  <img src="images/screenread_3.jpeg" width="375px" alt="breakdownschets">
   
   - Punt 6: Idem dito, op het moment dat je op "ontdek meer" klikt, word er niet aangegeven op welke section je zit als gebruiker.
   
@@ -109,26 +109,37 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Net begonnen met het bouwen van de HTML structuur.
+  Ik wist nog niet helemaal goed hoe ik sommige elementen moest opbouwen met HTML.
+  Vooral de blokken in het midden (de blokken onder de fietsen) zit ik nog over te twijfelen.
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  Jesse:
+  HTML code en breakdownschets
+  
+  Nathan: 
+  HTML code
+  
+  Henriks:
+  De vertaalslag van breakdownschets naar HTML
+  
+  Emilio:
+  Breakdownschets
+  
+  Giorgio:
+  Vertaalslag van breakdownschets naar HTML
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - eerste HTML gaat goed
+  - README bijhouden
+  - Screenshots mobiel toevoegen
+  - Wat tips met flexbox gebruiken gekregen
 
 </details>
 
@@ -142,17 +153,26 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Ik ben verder gegaan met HTML, liep tegen een paar punten aan waardoor ik niet helemaal lekker door kon gaan.
+  Vooral het responsive maken vind ik lastig. Maar gaat nu wel een stuk beter.
+  De hero is een video, ik weet niet hoe ik deze het beste kan bouwen met HTML.
+  Ik zie op internet veel position: absolute, maar ik weet niet of dit de beste manier is.
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  Jesse:
+  CSS + JS interactie bespreken
+  
+  Nathan: 
+  Afwezig
+  
+  Giorgio:
+  HTML en CSS bespreken, vooral het responsive maken van de code.
+  
+  Henriks:
+  Over GRID en FLEXBOX, mbt responsiveness van bepaalde onderdelen.
 
 
   ### Verslag van meeting
