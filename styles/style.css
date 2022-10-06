@@ -113,6 +113,8 @@ main ul li {
 	margin:1.25em;
 	text-align: center;
 	padding: 4em 1.25em;
+	max-height: 45rem;
+	background-position: right;
 }
 
 section article {
