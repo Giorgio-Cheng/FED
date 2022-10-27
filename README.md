@@ -62,17 +62,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   
   - Punt 2: Wanneer je op de pagina komt, hoor je een de slogan, echter eindigt ie abrupt in het midden:
   
-  <img src="readme-images/screenread_1.jpeg" width="375px" alt="breakdownschets">
+  <img src="readme-imagesimages/screenread_1.jpeg" width="375px" alt="breakdownschets">
 
   - Punt 3: Wanneer je de bij "taal" bent, geeft de stem aan: "NL/NL" ipv, context wat je met deze button kan doen.
   
-  <img src="readme-images/screenread_2.jpeg" width="375px" alt="breakdownschets">
+  <img src="readme-imagesimages/screenread_2.jpeg" width="375px" alt="breakdownschets">
 
   - Punt 4: Idem dito voor "Myvanmoof", geen context weergeven wat je met deze button kan doen.
   
   - Punt 5: Als je naar de artikelen gaat, geeft de screenreader niet aan om welk product het gaat:
   
-  <img src="readme-images/screenread_3.jpeg" width="375px" alt="breakdownschets">
+  <img src="readme-imagesimages/screenread_3.jpeg" width="375px" alt="breakdownschets">
   
   - Punt 6: Idem dito, op het moment dat je op "ontdek meer" klikt, word er niet aangegeven op welke section je zit als gebruiker.
   
@@ -236,12 +236,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+Emilio:
+Footer: CSS - Label & Input
+Animeren Button
 
+Jesse:
+Tweede pagina CSS
+Javascript
+
+Henriks:
+Media queries
+Twee losse CSS files
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen

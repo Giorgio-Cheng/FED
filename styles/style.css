@@ -26,6 +26,7 @@ button, summary {
 	--color-card-black:#1a1c20;
 	--color-btn-gray: #b1b9c5;
 	--color-btn-dark: #2d3033;
+	--color-background-footer: #1a1c1f;
 }
 
 
@@ -51,6 +52,11 @@ body {
 main {
 	max-width: 1280px;
 	margin: auto;
+}
+
+footer {
+	background-color: var(--color-background-footer);
+	color: var(--color-text-white);
 }
 
 ul {
@@ -123,7 +129,7 @@ main section:nth-of-type(1),  section:nth-of-type(2){
 	gap: 1em;
 }
 
-section:nth-of-type(1) p:nth-of-type(1) {
+main section:nth-of-type(1) p:nth-of-type(1) {
 	order: -1;
 }
 
@@ -213,7 +219,7 @@ main ul:nth-of-type(3) {
 
 main ul:nth-of-type(3) li div{
 	background-color:var(--color-card);
-	padding: 48px 20px 40px;
+	padding: 3em 1.25em 2.5em;
 	display: flex;
     flex-direction: column;
     justify-content: center;
@@ -222,7 +228,7 @@ main ul:nth-of-type(3) li div{
 
 main ul:nth-of-type(3) li:nth-of-type(3) div{
 	background-color:var(--color-card-black);
-	color:white;
+	color:var(--color-text-white);
 }
 
 li img {
@@ -249,9 +255,10 @@ main ul:nth-of-type(3) li:nth-of-type(3) div a {
 /* Laatste section */
 
 section:nth-of-type(2){
-	height: 80vh;
+	height: 100vh;
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center;
 	display: flex;
     flex-direction: column;
     justify-content: end;
@@ -269,34 +276,80 @@ main section:nth-of-type(2) a{
 	text-align: center;
 }
 
-
-
-
 /****************/
 /*    FOOTER    */
 /****************/
-footer {
-	background-color: #1a1c1f;
-	color: white;
+
+/* STYLING FOOTER */
+
+footer ul:nth-of-type(2) li, footer ul:nth-of-type(3), footer ul:nth-of-type(4) {
+	border-bottom-style: solid;
+	border-color: var(--color-text-gray);
+    padding: 1.5em 0;
+	border-width: 0.03125em;
 }
 
-footer ul {
-	margin-bottom: 2rem;
-}
+/* USP's */
 
 footer ul:nth-of-type(1) li {
-	padding: 1.5rem 1.25rem;
+	padding: 1.5em 1.25em;
     background-color: #2d3033;
 }
 
+/* Eerste blok */
+
 footer section {
-	padding: 1.5rem 1.25rem;
-	/* display: grid */
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+	padding: 4em 1.25em 1.5em;
 }
 
-footer ul:nth-of-type(2) {
-	padding: 1.5rem 1.25rem;
+footer section div {
+	display: flex;
+}
 
+footer section div:nth-of-type(1) p {
+	flex: 60%;
+}
+
+footer section div:nth-of-type(2) {
+	padding: 0.875em 1.25em;
+	height: 3.5em;
+    border-radius: 32px;
+    background-color: #3e4246;
+}
+
+footer section div input {
+    color: #b1b9c5;
+    line-height: 1.5em;
+	background-color: transparent;
+	border: 2px solid transparent;
+}
+
+footer section div:nth-of-type(1) button {
+	background-color: var(--color-btn-gray);
+    border-radius: 50%;
+    color: var(--color-text-white);
+    width: 3em;
+    height: 3em;
+}
+
+footer section div:nth-of-type(2) button {
+	background-color: var(--color-text);
+    border-radius: 50%;
+    color: var(--color-text-white);
+    position: relative;
+    top: -8px;
+    left: 124px;
+    width: 3em;
+    height: 3em;
+}
+
+/* Footer menu */
+
+footer ul:nth-of-type(2) {
+	padding: 1.5em 1.25em;
 }
 
 footer ul:nth-of-type(2) li {
@@ -304,20 +357,29 @@ footer ul:nth-of-type(2) li {
 	justify-content: space-between;
 }
 
+/* Socials */
+
 footer ul:nth-of-type(3) {
-	padding: 1.5rem 1.25rem;
+	padding: 1.5em 1.25em;
 	display: flex;
-	justify-content: space-between;
+	gap: 1.5em;
 }
+
+/* Betaal icoontjes */
 
 footer ul:nth-of-type(4) {
-	padding: 1.5rem 1.25rem;
+	padding: 1.5em 1.25em;
 	display: flex;
-	justify-content: space-between;
+	gap: 1em;
 }
 
+/* Laatste links */
+
 footer ul:nth-of-type(5) {
-	padding: 1.5rem 1.25rem;
+	padding: 1.5em 1.25em;
+	display: flex;
+    flex-direction: column;
+    gap: 1.5em;
 }
 
 /* Responsive */
@@ -336,7 +398,6 @@ footer ul:nth-of-type(5) {
 	ul:nth-of-type(3) {
 		display: flex;
 		flex-wrap: wrap;
-
 	}
 
 	main ul:nth-of-type(3) li {
