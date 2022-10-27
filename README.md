@@ -22,7 +22,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Blauw
 
   #### Je focus:
-  Surface plane
+  Responsive
  
 </details>
 
@@ -40,11 +40,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   <b>Home pagina</b> <br>
-  <img src="images/screencapture-vanmoof-nl-NL-2022-09-05-17_30_45.png" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/screencapture-vanmoof-nl-NL-2022-09-05-17_30_45.png" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   <b>Model S5 pagina</b> <br>
-  <img src="images/mobile (98).png" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/mobile (98).png" width="375px" alt="omschrijving van de pagina">
  
 </details>
 
@@ -62,17 +62,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   
   - Punt 2: Wanneer je op de pagina komt, hoor je een de slogan, echter eindigt ie abrupt in het midden:
   
-  <img src="images/screenread_1.jpeg" width="375px" alt="breakdownschets">
+  <img src="readme-imagesimages/screenread_1.jpeg" width="375px" alt="breakdownschets">
 
   - Punt 3: Wanneer je de bij "taal" bent, geeft de stem aan: "NL/NL" ipv, context wat je met deze button kan doen.
   
-  <img src="images/screenread_2.jpeg" width="375px" alt="breakdownschets">
+  <img src="readme-imagesimages/screenread_2.jpeg" width="375px" alt="breakdownschets">
 
   - Punt 4: Idem dito voor "Myvanmoof", geen context weergeven wat je met deze button kan doen.
   
   - Punt 5: Als je naar de artikelen gaat, geeft de screenreader niet aan om welk product het gaat:
   
-  <img src="images/screenread_3.jpeg" width="375px" alt="breakdownschets">
+  <img src="readme-imagesimages/screenread_3.jpeg" width="375px" alt="breakdownschets">
   
   - Punt 6: Idem dito, op het moment dat je op "ontdek meer" klikt, word er niet aangegeven op welke section je zit als gebruiker.
   
@@ -94,8 +94,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details>
   <summary>uitwerken na afloop 2e werkgroep</summary>
 
-  ### de hele pagina:
-  <img src="images/Breakdownschets.png" width="375px" alt="breakdown van de hele pagina">
+  ### de hele pagina: 
+  <img src="readme-images/Breakdownschets.png" width="375px" alt="breakdown van de hele pagina">
+
+  ### de hele pagina v2 (na feedback van voortgang 1): 
+  <img src="readme-images/Breakdownschetsv2.png" width="375px" alt="breakdown van de hele pagina">
 
 </details>
 
@@ -176,12 +179,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  Voortgang ging goed ik was goed opweg. Heb een aantal dingen kunnen vragen zoals flex direction zodat een flex box voor een andere komt. Verder heb ik mee geluisterd met wat derest van het groepje te vertellen had en hoe hun bezig waren met hun html en css.
 
 </details>
 

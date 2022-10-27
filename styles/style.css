@@ -18,10 +18,14 @@ button, summary {
 /*********************/
 :root {
 	/* startje */
-	--color-text:#111;
+	--color-text:#191c1f;
+	--color-text-white:#fff;
+	--color-text-gray:#6d747d;
 	--color-background:#fff;
 	--color-card:#edf2f5;
 	--color-card-black:#1a1c20;
+	--color-btn-gray: #b1b9c5;
+	--color-btn-dark: #2d3033;
 }
 
 
@@ -29,10 +33,10 @@ button, summary {
 
 
 /****************/
-/* JOUW STYLING */
+/* MIJN STYLING */
 /****************/
 
-/* jouw code */
+/* mijn code */
 * {
 	margin: 0px;
 	padding: 0px;
@@ -41,22 +45,50 @@ button, summary {
 body {
   color:var(--color-text);
   background-color:var(--color-background);
-  max-width: 1280px;
-  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+	max-width: 1280px;
+	margin: auto;
 }
 
 ul {
     list-style-type: none;
 }
 
-/* Header */
+p {
+	font-size: 1em;
+	line-height: 1.4em;
+	font-weight: 300;
+}
+
+a {
+	font-size: 0.875em;
+}
+
+h2 {
+	font-size: 1.75em;
+	font-weight: 400;
+}
+
+h3 {
+	font-size: 1em;
+	font-weight: 800;
+}
+
+
+
+/****************/
+/*    HEADER    */
+/****************/
 header {
 	display: grid;
 	padding: 1.2em;
 	grid-template-columns: 1fr 1fr 1fr;
 	z-index: 9999;
     position: fixed;
-    background: white;
+    background: var(--color-background);
 	width: 100%;
 }
 
@@ -66,43 +98,74 @@ header button {
 
 header img {
 	width: 100%;
-	height: 80%;
+	height: 1em;
 }
 
+/****************/
+/*     HERO     */
+/****************/
 /* Hero image */
 /* Color en gap nog aanpassen */
 /* Hoe krijg ik knoppen naast elkaar? Met grid!? */
-main section:nth-of-type(1),  section:nth-of-type(3){
+section:nth-of-type(1) h1, main ul:nth-of-type(1) h2{
+	display: none;
+}
+
+main section:nth-of-type(1),  section:nth-of-type(2){
 	height: 80vh;
-	background-image: url(../images/M_TestRides.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	display: flex;
     flex-direction: column;
     justify-content: end;
 	padding: 1.5625em;
-	color: #eee;
+	color: var(--color-text-white);
 	gap: 1em;
 }
 
-/*  Video is nog onder onderhoud
+section:nth-of-type(1) p:nth-of-type(1) {
+	order: -1;
+}
+
 video {
 	object-fit: cover;
   	height: 80vh;
  	width: 100%;
-
   	position: absolute;
  	top: 0;
 	left: 0;
+	z-index: -1;
 }
-*/
 
+main section:nth-of-type(1) a:nth-of-type(1) {
+	width: fit-content;
+	padding: 0.8em 1.6em;
+	border-radius: 28px;
+    background-color: transparent;
+    color: var(--color-text-white);
+    border: 2px solid var(--color-text-white);
+}
 
+main section:nth-of-type(1) a:nth-of-type(2) {
+	width: fit-content;
+	padding: 0.8em 1.6em;
+	border-radius: 28px;
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
+main section:nth-of-type(1) p {
+	font-size: 1.125em;
+}
+
+/****************/
+/*    FIETSEN   */
+/****************/
 section:nth-of-type(2) {
 	padding: 1.25em;
 }
 
-main ul li {
+main ul:nth-of-type(1) li, main ul:nth-of-type(2) li {
 	background-image: url(../images/M_S5_0.jpeg);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -117,26 +180,101 @@ main ul li {
 	background-position: right;
 }
 
-section article {
-	display: flex;
-	flex-direction: column;
-	gap: 1em;
-	text-align: center;
-	padding: 3em 1.25em 2.5em;
-	text-align: left;
-	background-color:var(--color-card);
+main ul:nth-of-type(1) li p:nth-of-type(1), main ul:nth-of-type(2) li p:nth-of-type(1) {
+	font-size: 1.375em;
+	font-weight: 800;
 }
 
-article:nth-of-type(3) {
+main ul:nth-of-type(1) li p:nth-of-type(2), main ul:nth-of-type(2) li p:nth-of-type(2) {
+	color: var(--color-text-gray);
+}
+
+main ul:nth-of-type(1) li a, main ul:nth-of-type(2) li a {
+	width: fit-content;
+	padding: 0.8em 1.6em;
+	border-radius: 28px;
+    background-color: transparent;
+    color: var(--color-text);
+    border: 2px solid var(--color-btn-gray);
+	margin: 0em auto;
+}
+
+/****************/
+/*    EXTRA BLOKKEN   */
+/****************/
+main ul:nth-of-type(3) li {
+	display: flex;
+	flex-direction: column;
+}
+
+main ul:nth-of-type(3) {
+	margin: 1.25em;
+}
+
+main ul:nth-of-type(3) li div{
+	background-color:var(--color-card);
+	padding: 48px 20px 40px;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+main ul:nth-of-type(3) li:nth-of-type(3) div{
 	background-color:var(--color-card-black);
 	color:white;
 }
 
-section img {
+li img {
 	max-width: 100%;
 }
 
-/* Footer */
+main ul:nth-of-type(3) li div a {
+	width: fit-content;
+	padding: 0.8em 1.6em;
+	border-radius: 28px;
+    background-color: var(--color-btn-dark);
+    color: var(--color-text-white);
+}
+
+main ul:nth-of-type(3) li:nth-of-type(3) div a {
+    background-color: var(--color-btn-dark);
+    color: var(--color-text-white);
+}
+
+/* main ul:nth-of-type(3) li:nth-of-type(2) div p:nth-of-type(1) { 
+	order: -1;
+}*/
+
+/* Laatste section */
+
+section:nth-of-type(2){
+	height: 80vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+    flex-direction: column;
+    justify-content: end;
+	padding: 1.5625em;
+	color: var(--color-text-white);
+	gap: 1em;
+	background-image: url(../images/M_TestRides.png)
+}
+
+main section:nth-of-type(2) a{
+	padding: 0.8em 1.6em;
+	border-radius: 28px;
+    background-color: var(--color-background);
+    color: var(--color-text);
+	text-align: center;
+}
+
+
+
+
+/****************/
+/*    FOOTER    */
+/****************/
 footer {
 	background-color: #1a1c1f;
 	color: white;
@@ -195,16 +333,25 @@ footer ul:nth-of-type(5) {
 		flex: 33%;
 	}
 
-	section:nth-of-type(2) {
+	ul:nth-of-type(3) {
 		display: flex;
 		flex-wrap: wrap;
+
 	}
 
-	section article {
-		flex: 50%;
+	main ul:nth-of-type(3) li {
+		flex-direction: row;
 	}
 
-	section img {
+	main ul:nth-of-type(3) li:nth-of-type(2) {
+		flex-direction: row-reverse;
+	}
+
+	li div {
+		flex-basis: 50%;
+	}
+
+	li img {
 		width: 50%;
 	}
 }
