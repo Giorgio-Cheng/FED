@@ -57,6 +57,8 @@ main {
 footer {
 	background-color: var(--color-background-footer);
 	color: var(--color-text-white);
+	max-width: 1280px;
+	margin: auto;
 }
 
 ul {
@@ -119,10 +121,11 @@ header img {
 /* Color en gap nog aanpassen */
 /* Hoe krijg ik knoppen naast elkaar? Met grid!? */
 section:nth-of-type(1) h1, main ul:nth-of-type(1) h2{
-	display: none;
+	position: fixed;
+	left: -1000000em;
 }
 
-main section:nth-of-type(1),  section:nth-of-type(2){
+main section:nth-of-type(1) {
 	height: 80vh;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -134,7 +137,10 @@ main section:nth-of-type(1),  section:nth-of-type(2){
 	gap: 1em;
 }
 
-main section:nth-of-type(1) p:nth-of-type(1) {
+main section:nth-of-type(1) p:nth-of-type(1), 
+main ul:nth-of-type(3) li:nth-of-type(2) p:nth-of-type(1), 
+main ul:nth-of-type(3) li:nth-of-type(3) p:nth-of-type(1),
+main section:nth-of-type(2) p:nth-of-type(1) {
 	order: -1;
 }
 
@@ -151,6 +157,7 @@ video {
 main section:nth-of-type(1) a:nth-of-type(1) {
 	width: fit-content;
 	padding: 0.8em 1.6em;
+	margin-right: 0.625em;
 	border-radius: 28px;
     background-color: transparent;
     color: var(--color-text-white);
@@ -167,8 +174,32 @@ main section:nth-of-type(1) a:nth-of-type(2) {
 
 main section:nth-of-type(1) p {
 	font-size: 1.125em;
+	max-width: 26em;
 }
 
+@media (min-width: 678px)  {
+	section:nth-of-type(1) div {
+		display: flex;
+	}
+}
+
+@media (max-width: 380px) {
+	main section:nth-of-type(1) div {
+		display: flex;
+		flex-direction: column;
+		gap: 1em;
+	}
+}
+
+@media (min-width: 1024px) {
+	main section:nth-of-type(1) {
+		justify-content: center;
+	}
+
+	main section:nth-of-type(1) h2 {
+		font-size: 3em;
+	}
+}
 /****************/
 /*    FIETSEN   */
 /****************/
@@ -177,7 +208,7 @@ section:nth-of-type(2) {
 }
 
 main ul:nth-of-type(1) li, main ul:nth-of-type(2) li {
-	background-image: url(../images/M_S5_0.jpeg);
+	background-image: url(../images/VanMoof_S5.jpeg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 35em;
@@ -189,6 +220,22 @@ main ul:nth-of-type(1) li, main ul:nth-of-type(2) li {
 	padding: 4em 1.25em;
 	max-height: 45rem;
 	background-position: right;
+}
+
+main ul:nth-of-type(1) li:nth-of-type(2) {
+	background-image: url(../images/VanMoof_A5.jpeg);
+}
+
+main ul:nth-of-type(2) li:nth-of-type(1) {
+	background-image: url(../images/VanMoof_S3.jpeg);
+}
+
+main ul:nth-of-type(2) li:nth-of-type(2) {
+	background-image: url(../images/VanMoof_X3.jpeg);
+}
+
+main ul:nth-of-type(2) li:nth-of-type(3) {
+	background-image: url(../images/VanMoof_Accessories.jpeg);
 }
 
 main ul:nth-of-type(1) li p:nth-of-type(1), main ul:nth-of-type(2) li p:nth-of-type(1) {
@@ -208,6 +255,23 @@ main ul:nth-of-type(1) li a, main ul:nth-of-type(2) li a {
     color: var(--color-text);
     border: 2px solid var(--color-btn-gray);
 	margin: 0em auto;
+}
+
+@media (min-width: 678px)  {
+	main ul:nth-of-type(1), main ul:nth-of-type(2) {
+	display: flex;
+	}
+
+	main ul:nth-of-type(1) li {
+	height: 45em;
+	}
+
+	ul:nth-of-type(1) li {
+		flex: 50%;
+	}
+	ul:nth-of-type(2) li {
+		flex: 33%;
+	}
 }
 
 /****************/
@@ -253,24 +317,53 @@ main ul:nth-of-type(3) li:nth-of-type(3) div a {
     color: var(--color-text-white);
 }
 
+@media (min-width: 678px)  {
+	main ul:nth-of-type(3) {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	main ul:nth-of-type(3) li {
+		flex-direction: row;
+		height: 36.25em;
+	}
+
+	main ul:nth-of-type(3) img {
+		object-fit: cover;
+	}
+
+	main ul:nth-of-type(3) li:nth-of-type(2) {
+		flex-direction: row-reverse;
+	}
+
+	main ul:nth-of-type(3) li div, main ul:nth-of-type(3) li img {
+		width: 50%;
+	}
+
+	main ul:nth-of-type(3) li div{
+		padding: 3em 4em;
+	}
+}
+
 /* main ul:nth-of-type(3) li:nth-of-type(2) div p:nth-of-type(1) { 
 	order: -1;
 }*/
 
 /* Laatste section */
 
-section:nth-of-type(2){
+main section:nth-of-type(2){
 	height: 100vh;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center;
+	background-position: top;
 	display: flex;
     flex-direction: column;
     justify-content: end;
 	padding: 1.5625em;
 	color: var(--color-text-white);
 	gap: 1em;
-	background-image: url(../images/M_TestRides.png)
+	background-image: url(../images/M_TestRides.png);
+	max-width: 100%;
 }
 
 main section:nth-of-type(2) a{
@@ -281,17 +374,41 @@ main section:nth-of-type(2) a{
 	text-align: center;
 }
 
+
+
+@media (min-width: 1024px) {
+	main section:nth-of-type(2) {
+		justify-content: center;
+	}
+
+	main section:nth-of-type(2) a {
+		width: fit-content;
+	}
+
+	main section:nth-of-type(2) h2 {
+		font-size: 3em;
+	}
+
+	main section:nth-of-type(2) p, main section:nth-of-type(2) h2 {
+		max-width: 26em;
+	}
+}
+
 /****************/
 /*    FOOTER    */
 /****************/
 
 /* STYLING FOOTER */
 
-footer ul:nth-of-type(2) li, footer ul:nth-of-type(3), footer ul:nth-of-type(4) {
+footer ul:nth-of-type(2) li, footer ul:nth-of-type(6), footer ul:nth-of-type(7) {
 	border-bottom-style: solid;
 	border-color: var(--color-text-gray);
     padding: 1.5em 0;
 	border-width: 0.03125em;
+}
+
+footer h3 {
+	font-size: 2em;
 }
 
 /* USP's */
@@ -304,7 +421,13 @@ footer ul:nth-of-type(1) li {
 }
 
 footer ul:nth-of-type(1) li img {
-	width: 10%;
+	width: 1.5em;
+}
+
+@media (min-width: 1024px) {
+	footer ul:nth-of-type(1) {
+		display: flex;
+	}
 }
 
 /* Eerste blok */
@@ -318,10 +441,11 @@ footer section {
 
 footer section div {
 	display: flex;
+    justify-content: space-between;
 }
 
 footer section div:nth-of-type(1) p {
-	flex: 80%;
+	max-width: 13.75em;
 }
 
 footer section div:nth-of-type(2) {
@@ -329,6 +453,7 @@ footer section div:nth-of-type(2) {
 	height: 3.5em;
     border-radius: 32px;
     background-color: #3e4246;
+	position: relative;
 }
 
 footer section div input {
@@ -350,9 +475,9 @@ footer section div:nth-of-type(2) button {
 	background-color: var(--color-text);
     border-radius: 50%;
     color: var(--color-text-white);
-    position: relative;
-    top: -8px;
-    left: 124px;
+    position: absolute;
+    top: 15%;
+    right: 1em;
     width: 3em;
     height: 3em;
 }
@@ -368,12 +493,28 @@ footer ul:nth-of-type(2) li {
 	justify-content: space-between;
 }
 
+/* footer ul:nth-of-type(3), footer ul:nth-of-type(4), footer ul:nth-of-type(5) {
+	display: none;
+} */
+
+/* @media (min-width: 992px)  {
+	footer ul:nth-of-type(2) {
+		display: none;
+	}
+
+	footer ul:nth-of-type(3), footer ul:nth-of-type(4), footer ul:nth-of-type(5) {
+		display: flex;
+		flex-direction: column;
+	}
+} */
+
 /* Socials */
 
 footer ul:nth-of-type(3) {
 	padding: 1.5em 1.25em;
 	display: flex;
 	gap: 1.5em;
+    filter: contrast(0.2);
 }
 
 /* Betaal icoontjes */
@@ -391,39 +532,4 @@ footer ul:nth-of-type(5) {
 	display: flex;
     flex-direction: column;
     gap: 1.5em;
-}
-
-/* Responsive */
-@media (min-width: 678px)  {
-	ul {
-		display: flex;
-	}
-
-	ul:nth-of-type(1) li {
-		flex: 50%;
-	}
-	ul:nth-of-type(2) li {
-		flex: 33%;
-	}
-
-	ul:nth-of-type(3) {
-		display: flex;
-		flex-wrap: wrap;
-	}
-
-	main ul:nth-of-type(3) li {
-		flex-direction: row;
-	}
-
-	main ul:nth-of-type(3) li:nth-of-type(2) {
-		flex-direction: row-reverse;
-	}
-
-	li div {
-		flex-basis: 50%;
-	}
-
-	li img {
-		width: 50%;
-	}
 }
