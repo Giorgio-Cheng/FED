@@ -90,6 +90,10 @@ img {
 	width: 100%;
 }
 
+main a {
+	text-decoration: none;
+}
+
 
 
 /****************/
@@ -203,9 +207,6 @@ main section:nth-of-type(1) p {
 /****************/
 /*    FIETSEN   */
 /****************/
-section:nth-of-type(2) {
-	padding: 1.25em;
-}
 
 main ul:nth-of-type(1) li, main ul:nth-of-type(2) li {
 	background-image: url(../images/VanMoof_S5.jpeg);
@@ -400,11 +401,31 @@ main section:nth-of-type(2) a{
 
 /* STYLING FOOTER */
 
-footer ul:nth-of-type(2) li, footer ul:nth-of-type(6), footer ul:nth-of-type(7) {
+/* footer ul:nth-of-type(2) li, footer ul:nth-of-type(6), footer ul:nth-of-type(7) {
 	border-bottom-style: solid;
 	border-color: var(--color-text-gray);
     padding: 1.5em 0;
 	border-width: 0.03125em;
+} */
+
+@media (min-width: 1024px) {
+	footer {
+		display: flex;
+    	flex-direction: row;
+    	flex-wrap: wrap;
+	}
+
+	footer > ul:nth-of-type(1) {
+		width: 100%;
+	}
+
+	footer section {
+		width: 25%;
+	}
+
+	footer > ul:nth-of-type(2), footer > ul:nth-of-type(3) {
+		width: 50%;
+	}
 }
 
 footer h3 {
@@ -413,7 +434,7 @@ footer h3 {
 
 /* USP's */
 
-footer ul:nth-of-type(1) li {
+footer > ul:nth-of-type(1) li {
 	padding: 1.5em 1.25em;
     background-color: #2d3033;
 	display: flex;
@@ -425,7 +446,7 @@ footer ul:nth-of-type(1) li img {
 }
 
 @media (min-width: 1024px) {
-	footer ul:nth-of-type(1) {
+	footer > ul:nth-of-type(1) {
 		display: flex;
 	}
 }
@@ -437,6 +458,7 @@ footer section {
 	flex-direction: column;
 	gap: 1em;
 	padding: 4em 1.25em 1.5em;
+	position: relative;
 }
 
 footer section div {
@@ -484,42 +506,67 @@ footer section div:nth-of-type(2) button {
 
 /* Footer menu */
 
-footer ul:nth-of-type(2) {
-	padding: 1.5em 1.25em;
+footer section:nth-of-type(2) button, footer section:nth-of-type(3) button, footer section:nth-of-type(4) button {
+	position: absolute;
+    top: 0;
+    right: 0;
 }
 
-footer ul:nth-of-type(2) li {
-	display: flex;
-	justify-content: space-between;
+footer > section ul {
+	max-height: 0;
+    overflow: hidden;
+	gap: 0.6em;
+    display: flex;
+    flex-direction: column;
 }
 
-/* footer ul:nth-of-type(3), footer ul:nth-of-type(4), footer ul:nth-of-type(5) {
-	display: none;
-} */
+footer section.open ul {
+	padding:1em;
+	max-height:fit-content;
+}
 
-/* @media (min-width: 992px)  {
-	footer ul:nth-of-type(2) {
+@media (min-width: 1024px) {
+	footer section button {
 		display: none;
 	}
 
-	footer ul:nth-of-type(3), footer ul:nth-of-type(4), footer ul:nth-of-type(5) {
-		display: flex;
-		flex-direction: column;
+	footer section div:nth-of-type(2) button {
+		display: block;
 	}
-} */
+
+	footer > section ul {
+		max-height: fit-content;
+	}
+
+	footer ul:nth-of-type(3) {
+		justify-content: end;
+	}
+}
+
+@media (max-width: 1023px) {
+	footer section {
+		margin: 4em 1.25em 1.5em;
+		padding: 0;
+	}
+	
+}
 
 /* Socials */
 
-footer ul:nth-of-type(3) {
+footer ul:nth-of-type(2) {
 	padding: 1.5em 1.25em;
 	display: flex;
 	gap: 1.5em;
     filter: contrast(0.2);
 }
 
+footer ul:nth-of-type(2) li {
+	max-width: 2em;
+}
+
 /* Betaal icoontjes */
 
-footer ul:nth-of-type(4) {
+footer ul:nth-of-type(3) {
 	padding: 1.5em 1.25em;
 	display: flex;
 	gap: 1em;
@@ -527,9 +574,15 @@ footer ul:nth-of-type(4) {
 
 /* Laatste links */
 
-footer ul:nth-of-type(5) {
+footer ul:nth-of-type(4) {
 	padding: 1.5em 1.25em;
 	display: flex;
     flex-direction: column;
     gap: 1.5em;
+}
+
+@media (min-width: 1024px) {
+	footer ul:nth-of-type(4) {
+		flex-direction: row;
+	}
 }
