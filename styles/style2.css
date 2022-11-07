@@ -1,0 +1,397 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+button, summary {
+	cursor: pointer;
+}
+
+
+
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	/* startje */
+	--color-text:#191c1f;
+	--color-text-white:#fff;
+	--color-text-gray:#6d747d;
+	--color-background:#fff;
+	--color-card:#edf2f5;
+	--color-card-black:#1a1c20;
+	--color-btn-gray: #b1b9c5;
+	--color-btn-dark: #2d3033;
+	--color-background-footer: #1a1c1f;
+}
+
+
+
+
+
+/****************/
+/* MIJN STYLING */
+/****************/
+
+/* mijn code */
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+  color:var(--color-text);
+  background-color:var(--color-background);
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 1280px;
+	margin: auto;
+}
+
+footer {
+	background-color: var(--color-background-footer);
+	color: var(--color-text-white);
+}
+
+ul {
+    list-style-type: none;
+}
+
+p {
+	font-size: 1em;
+	line-height: 1.4em;
+	font-weight: 300;
+}
+
+a {
+	font-size: 0.875em;
+	color: var(--color-text-white);
+}
+
+h1 {
+	font-size: 7.5em;
+}
+
+h2 {
+	font-size: 1.75em;
+	font-weight: 400;
+}
+
+h3 {
+	font-size: 1em;
+	font-weight: 800;
+}
+
+img {
+	width: 100%;
+}
+
+main a {
+	text-decoration: none;
+}
+
+
+
+
+
+/****************/
+/*    HEADER    */
+/****************/
+header {
+	display: grid;
+	padding: 1.2em;
+	grid-template-columns: 1fr 1fr 1fr;
+	z-index: 9999;
+    position: fixed;
+    background: var(--color-background);
+	width: 100%;
+}
+
+header button {
+	max-width: fit-content;
+}
+
+header img {
+	width: 100%;
+	height: 1em;
+}
+
+header ul {
+	display: none;
+}
+
+header.open {
+	height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+}
+
+header button.open {
+	position: absolute;
+}
+
+header ul.open {
+	display: flex;
+    flex-direction: column;
+    gap: 2em;
+    font-size: 1.2em;
+}
+
+header a.open {
+	order: -1;
+}
+
+@media (max-width: 1023px) {
+	header ul li {
+		padding-bottom: 1em;
+    	border-bottom-style: solid;
+    	border-bottom-width: 1px;
+	}
+}
+
+@media (min-width: 1024px) {
+	header {
+		display: flex;
+		left: 0;
+		gap: 2em;
+		min-height: 4em;
+		place-items: center;
+	}
+
+	header ul {
+		display: flex;
+		gap: 2em;
+	}
+
+	header button {
+		display: none;
+	}
+
+	header a {
+		order: -1;
+	}
+}
+
+/****************/
+/*    MAIN	    */
+/****************/
+
+/* Section 1 */
+main section:nth-of-type(1) {
+	padding: 7.5em 0em;
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+	margin: 0 1.25em;
+}
+
+main section:nth-of-type(1) p:nth-of-type(1) {
+	order: -1;
+}
+
+/* Section 2 */
+
+/* main section:nth-of-type(2) {
+	height: 60vh;
+	background-image: url(../images/D_S5_3.png);
+	align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+	background-size: cover;
+    background-position: center;
+    color: var(--color-text-white)
+} */
+
+/* Section 3 */
+
+main section:nth-of-type(3) {
+	height: 100vh;
+	background-image: url(../images/VM_S5_670x880-2.jpg);
+	background-size: cover;
+    background-position: center;
+    color: var(--color-text-white)
+}
+
+/****************/
+/*    FOOTER    */
+/****************/
+
+@media (min-width: 1024px) {
+	footer {
+		display: flex;
+    	flex-direction: row;
+    	flex-wrap: wrap;
+	}
+
+	footer > ul:nth-of-type(1) {
+		width: 100%;
+		display: flex;
+	}
+
+	footer section {
+		width: 25%;
+	}
+
+	footer > ul:nth-of-type(2), footer > ul:nth-of-type(3) {
+		width: 50%;
+	}
+}
+
+footer h3 {
+	font-size: 2em;
+}
+
+/* USP's */
+
+footer > ul:nth-of-type(1) li {
+	padding: 1.5em 1.25em;
+    background-color: #2d3033;
+	display: flex;
+	gap: 1em;
+}
+
+footer ul:nth-of-type(1) li img {
+	width: 1.5em;
+}
+
+/* Eerste blok */
+
+footer section {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+	padding: 4em 1.25em 1.5em;
+	position: relative;
+}
+
+footer section div {
+	display: flex;
+    justify-content: space-between;
+}
+
+footer section div:nth-of-type(1) p {
+	max-width: 13.75em;
+}
+
+footer section div:nth-of-type(2) {
+	padding: 0.875em 1.25em;
+	height: 3.5em;
+    border-radius: 32px;
+    background-color: #3e4246;
+	position: relative;
+}
+
+footer section div input {
+    color: #b1b9c5;
+    line-height: 1.5em;
+	background-color: transparent;
+	border: 2px solid transparent;
+}
+
+footer section div:nth-of-type(1) button {
+	background-color: var(--color-btn-gray);
+    border-radius: 50%;
+    color: var(--color-text-white);
+    width: 3em;
+    height: 3em;
+}
+
+footer section div:nth-of-type(2) button {
+	background-color: var(--color-text);
+    border-radius: 50%;
+    color: var(--color-text-white);
+    position: absolute;
+    top: 15%;
+    right: 1em;
+    width: 3em;
+    height: 3em;
+}
+
+/* Footer menu */
+
+footer section:nth-of-type(2) button, footer section:nth-of-type(3) button, footer section:nth-of-type(4) button {
+	position: absolute;
+    top: 0;
+    right: 0;
+}
+
+footer > section ul {
+	max-height: 0;
+    overflow: hidden;
+	gap: 0.6em;
+    display: flex;
+    flex-direction: column;
+}
+
+footer section.open ul {
+	padding:1em;
+	max-height:fit-content;
+}
+
+@media (min-width: 1024px) {
+	footer section button {
+		display: none;
+	}
+
+	footer section div:nth-of-type(2) button {
+		display: block;
+	}
+
+	footer > section ul {
+		max-height: fit-content;
+	}
+
+	footer ul:nth-of-type(3) {
+		justify-content: end;
+	}
+}
+
+@media (max-width: 1023px) {
+	footer section {
+		margin: 4em 1.25em 1.5em;
+		padding: 0;
+	}
+	
+}
+
+/* Socials */
+
+footer ul:nth-of-type(2) {
+	padding: 1.5em 1.25em;
+	display: flex;
+	gap: 1.5em;
+    filter: contrast(0.2);
+}
+
+footer ul:nth-of-type(2) li {
+	max-width: 2em;
+}
+
+/* Betaal icoontjes */
+
+footer ul:nth-of-type(3) {
+	padding: 1.5em 1.25em;
+	display: flex;
+	gap: 1em;
+}
+
+/* Laatste links */
+
+footer ul:nth-of-type(4) {
+	padding: 1.5em 1.25em;
+	display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+@media (min-width: 1024px) {
+	footer ul:nth-of-type(4) {
+		flex-direction: row;
+	}
+}

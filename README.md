@@ -77,16 +77,66 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Punt 6: Idem dito, op het moment dat je op "ontdek meer" klikt, word er niet aangegeven op welke section je zit als gebruiker.
   
   #### Muis en Toetsenbord 
-  De taps zijn over het algemeen wel logisch, echter slaat de screenreader hele blokken over zonder de context te vermelden waar je je bevindt als        gebruiker.
+  Met tab navigeer je op een logische wijze door de website heen.
+
+
 
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  Contrast; contrast van de tekst op de afbeelding is niet goed zichtbaar. Wellicht kan je een gradient color overlay gebruiken om de contrast te verbeteren
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Kleurenblind; De kleuren die aanwezig zijn voor de meeste elementen zijn voornamelijk zwart, wit of grijstinten. Dit zorgt voor een goede leesbaarheid voor alle visueel beperkte mensen.
+
+  Brillen; getest op staar, vlekken en een filter. De website is in principe bij allen goed te doen. Kijk alleen even naar hoe je het kan verbeteren. Vooral met staar. Je hebt veel elementen in het midden gecentreerd, dit is een knelpunt van staar.
+
+  dark/light: Er is geen dark en light mode aanwezig op de website. Als je dit forceert via rendering is dit ook niet
+
 
 </details>
 
+<details>
+  <summary>uitwerken na test in 1e werkgroep</summary>
+
+  #### Screenreader
+  www.vanmoof.com/nl getest:
+  
+  - Punt 1: Het valt me op dat als je op de Nederlandse pagina komt van Van Moof, er een engelse stem te horen is.
+  
+  - Punt 2: Wanneer je op de pagina komt, hoor je een de slogan, echter eindigt ie abrupt in het midden:
+  
+  <img src="readme-imagesimages/screenread_1.jpeg" width="375px" alt="breakdownschets">
+
+  - Punt 3: Wanneer je de bij "taal" bent, geeft de stem aan: "NL/NL" ipv, context wat je met deze button kan doen.
+  
+  <img src="readme-imagesimages/screenread_2.jpeg" width="375px" alt="breakdownschets">
+
+  - Punt 4: Idem dito voor "Myvanmoof", geen context weergeven wat je met deze button kan doen.
+  
+  - Punt 5: Als je naar de artikelen gaat, geeft de screenreader niet aan om welk product het gaat:
+  
+  <img src="readme-imagesimages/screenread_3.jpeg" width="375px" alt="breakdownschets">
+  
+  - Punt 6: Idem dito, op het moment dat je op "ontdek meer" klikt, word er niet aangegeven op welke section je zit als gebruiker.
+  
+  #### Muis en Toetsenbord 
+  Met tab navigeer je op een logische wijze door de website heen.
+
+  Screenreader; learn more buttons meer context geven. Eventueel de headings ook meer uitleggen.  
+
+
+  #### Visueel (brillen, contrast, kleurenblind, dark/light). 
+  Contrast; contrast van de tekst op de afbeelding is niet goed zichtbaar. Wellicht kan je een gradient color overlay gebruiken om de contrast te verbeteren
+
+  Kleurenblind; De kleuren die aanwezig zijn voor de meeste elementen zijn voornamelijk zwart, wit of grijstinten. Dit zorgt voor een goede leesbaarheid voor alle visueel beperkte mensen.
+
+  Brillen; getest op staar, vlekken en een filter. De website is in principe bij allen goed te doen. Kijk alleen even naar hoe je het kan verbeteren. Vooral met staar. Je hebt veel elementen in het midden gecentreerd, dit is een knelpunt van staar.
+
+  dark/light: Er is geen dark en light mode aanwezig op de website. Als je dit forceert via rendering is dit ook niet toegankelijk.
+
+
+
+
+</details>
 
 
 ## Breakdownschets (week 1)
@@ -294,8 +344,10 @@ Twee losse CSS files
 
   Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+  2. Sanne - codepen
+      - uitklap menu
+  3. https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp
+  
 
 </details>
